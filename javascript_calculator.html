@@ -1,0 +1,159 @@
+<html>
+
+<head>
+	<!--Important MetaData: title, keywords, etc..-->
+	<meta charset="UTF-8">
+	<title>JavaScript Calculator</title>
+	<meta name="description" content="JavaScript Calculator">
+	<meta name="keywords" content="Calculator, Mathematics, JavaScript">
+	<meta name="device" content="width=device-width,initial-scale=1.0">
+	<meta name="author" content="Adam Shaffer">
+
+
+	<!--LINKS TO EXTERNAL FILES-->
+	<script src="../string-math/string-math/string-math.js"></script>
+
+	<!--EXTERNAL LINKS TO LOCAL CASCADING STYLE SHEET AND JAVASCRIPT CODE-->
+	<!--Link to CSS sheet-Show_the_Weather.css-->
+	<link rel="stylesheet" text="css" href="javascript_calculator.css">
+	<!--Link to JavaScript Code-->
+	<script src="javascript_calculator.js"></script>
+
+	<!--BOOTSTRAP LINKS AND CDN-->
+	<!--Links to Bootstrap-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!--JQuery Google CDN-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!--Link to w3 School library-->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<!--Link to Google Fonts-->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Bowlby+One+SC|PT+Serif|Roboto+Slab|Orbitron" rel="stylesheet">
+
+	<!-- Links to Devicons -->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!--JQuery Google CDN-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="javascript_calculator.css">
+
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-4">
+
+				<div class="w3-card w3-grey">
+					<header class="w3-container w3-light-grey">
+						<h1 class="text-center">electronic calculator</h1>
+					</header>
+					<div class="w3-container w3-grey">
+
+						<div class="screendisplay">
+							<div id="mainline">
+								0
+							</div>
+							<div id="subline">
+								0
+							</div>
+						</div>
+
+						<div class="w3-row w3-grey">
+							<div class="w3-button w3-round w3-red w3-hover-light-grey" onclick="acbutton()">
+								AC
+							</div>
+							<div class="w3-button w3-round w3-red w3-hover-light-grey" onclick="bsbutton()">
+								BS
+							</div>
+							<div class="w3-button w3-round w3-blue w3-hover-light-grey" onclick="divide()">
+								/
+							</div>
+							<div class="w3-button w3-round w3-blue w3-hover-light-grey" onclick="multiply()">
+								X
+							</div>
+						</div>
+
+						<div class="w3-row w3-grey">
+							<div class="w3-button w3-round w3-blue w3-hover-light-grey" onclick="button7()">
+								7
+							</div>
+							<div class="w3-button w3-round w3-blue w3-hover-light-grey" onclick="button8()">
+								8
+							</div>
+							<div class="w3-button w3-round w3-blue w3-hover-light-grey" onclick="button9()">
+								9
+							</div>
+							<div class="w3-button w3-round w3-blue w3-hover-light-grey" onclick="minus()">
+								-
+							</div>
+						</div>
+
+
+						<div class="w3-row w3-grey">
+							<div class="w3-button w3-round w3-blue w3-hover-light-grey" onclick="button4()">
+								4
+							</div>
+							<div class="w3-button w3-round w3-blue w3-hover-light-grey" onclick="button5()">
+								5
+							</div>
+							<div class="w3-button w3-round w3-blue w3-hover-light-grey" onclick="button6()">
+								6
+							</div>
+							<div class="w3-button w3-round w3-blue w3-hover-light-grey" onclick="plus()">
+								+
+							</div>
+						</div>
+
+
+						<div class="w3-row w3-grey">
+							<div class="w3-button w3-round w3-blue w3-hover-light-grey" onclick="button1()">
+								1
+							</div>
+							<div class="w3-button w3-round w3-blue w3-hover-light-grey" onclick="button2()">
+								2
+							</div>
+							<div class="w3-button w3-round w3-blue w3-hover-light-grey" onclick="button3()">
+								3
+							</div>
+							<div class="w3-button w3-round w3-blue w3-hover-light-grey" onclick="openBracket()">
+								(
+							</div>
+						</div>
+
+						<div class="w3-row w3-grey">
+							<div class="w3-button w3-round w3-blue w3-hover-light-grey" onclick="button0()">
+								0
+							</div>
+							<div class="w3-button w3-round w3-blue w3-hover-light-grey" onclick="period()">
+								.
+							</div>
+							<div class="w3-button w3-round w3-blue w3-hover-light-grey" onclick="equals()">
+								=
+							</div>
+							<div class="w3-button w3-round w3-blue w3-hover-light-grey" onclick="closingBracket()">
+								)
+							</div>
+
+						</div>
+						<footer class="w3-container">
+							<h5>Designed and Coded by <span class="name">Adam Shaffer</span></h5>
+						</footer>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
