@@ -4,12 +4,12 @@
   "description": "Basic Calculator app using Redux",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "test.js"
   },
   "repository": {
-  	"type":"git",
-	"url":"https://github.com/GreatDeveloper66/basicCalculator.git"
-  }
+    "type": "git",
+    "url": "git+https://github.com/GreatDeveloper66/basicCalculator.git"
+  },
   "keywords": [
     "calculator",
     "redux",
@@ -17,5 +17,12 @@
     "math"
   ],
   "author": "Adam Shaffer",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GreatDeveloper66/basicCalculator/issues"
+  },
+  "homepage": "https://github.com/GreatDeveloper66/basicCalculator#readme",
+  "dependencies": {
+    "redux": "^4.0.4"
+  }
 }
