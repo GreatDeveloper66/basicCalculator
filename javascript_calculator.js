@@ -198,6 +198,7 @@ var closingBracket = function() {
 };
 
 var equals = function() {
+  display("0","0");
   numbers = [];
   var numtoDisplay = stringMath(subStr.replace("X", "*"));
   //numbers[0] = mainStr = subStr = eval(subStr.replace("X","*")).toString();
