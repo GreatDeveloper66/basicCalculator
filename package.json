@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/GreatDeveloper66/basicCalculator#readme",
   "dependencies": {
-    "redux": "^4.0.4"
+    "redux": "^4.0.4",
+    "string-math": "^1.2.1"
   }
 }

@@ -1,3 +1,4 @@
+/*import stringMath from "/node_modules/string-math/string-math.js";*/
 //most important global variables
 var mainStr = "0";
 var subStr = "0";
