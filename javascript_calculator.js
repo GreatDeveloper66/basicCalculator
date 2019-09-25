@@ -1,8 +1,18 @@
-/*import stringMath from "/node_modules/string-math/string-math.js";*/
+/*global window*/
+/*global document*/
+/*global Modernizr*/
+/*global SmoothScroll*/
+/*global console*/
+/*global $*/
+/*jshint esversion:6*/
+/*global event*/
+/*global requestAnimationFrame*/
+import stringMath from "/node_modules/string-math/string-math.js";
 //most important global variables
 var mainStr = "0";
 var subStr = "0";
 var numbers = [];
+let operators = [];
 
 const maxMainStr = 10;
 const maxSubStr = 26;
@@ -125,7 +135,7 @@ var bsbutton = function() {
         
         
       }
-      mainStr = numbers[numbers.length -1]
+      mainStr = numbers[numbers.length -1];
     }
     subStr = subStr.substring(0, subStr.length - 1);
   }
