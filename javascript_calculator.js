@@ -4,18 +4,19 @@
 /*global SmoothScroll*/
 /*global console*/
 /*global $*/
+/*global stringMath*/
 /*jshint esversion:6*/
 /*global event*/
 /*global requestAnimationFrame*/
-import stringMath from "/node_modules/string-math/string-math.js";
+/*import stringMath from "/node_modules/string-math/string-math.js";*/
 //most important global variables
 var mainStr = "0";
 var subStr = "0";
 var numbers = [];
-let operators = [];
 
 const maxMainStr = 10;
 const maxSubStr = 26;
+let operators = [];
 
 
 
