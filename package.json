@@ -25,5 +25,8 @@
   "dependencies": {
     "redux": "^4.0.4",
     "string-math": "^1.2.1"
+  },
+  "devDependencies": {
+    "redux-devtools": "^3.5.0"
   }
 }
