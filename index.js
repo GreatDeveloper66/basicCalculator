@@ -1,3 +1,13 @@
+/*global window*/
+/*global document*/
+/*global Modernizr*/
+/*global SmoothScroll*/
+/*global console*/
+/*global $*/
+/*global stringMath*/
+/*jshint esversion:6*/
+/*global event*/
+/*global requestAnimationFrame*/
 /*import stringMath from "/node_modules/string-math/string-math.js";*/
 //most important global variables
 var mainStr = "0";
@@ -6,6 +16,7 @@ var numbers = [];
 
 const maxMainStr = 10;
 const maxSubStr = 26;
+let operators = [];
 
 
 
@@ -125,7 +136,7 @@ var bsbutton = function() {
         
         
       }
-      mainStr = numbers[numbers.length -1]
+      mainStr = numbers[numbers.length -1];
     }
     subStr = subStr.substring(0, subStr.length - 1);
   }
@@ -198,7 +209,6 @@ var closingBracket = function() {
 };
 
 var equals = function() {
-  display("0","0");
   numbers = [];
   var numtoDisplay = stringMath(subStr.replace("X", "*"));
   //numbers[0] = mainStr = subStr = eval(subStr.replace("X","*")).toString();
